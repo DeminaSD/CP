@@ -1,16 +1,8 @@
-# gyroscope_example
+# CP
+Логика подсчета количества движений:
+1) Перевести угловые скорости в углы.
+2) Отфильтровать полученный угловой сигнал.
+3) Подсчитать количество min/max отфильтрованного сигнала. Рассчитать количество движений по формуле:
+n = (Nmax + Nmin - 2)//2
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application. This app using gyroscope data gives gyro counts (frames) and calculates sum of patterns (pronation-supination).
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Реализация логики - в файле "Prototype.ipynb"
